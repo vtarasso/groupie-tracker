@@ -23,7 +23,7 @@
                 <div class="allList">
                     <h3 class="allList-header">Artist's List</h3>
                     {{range.}}
-                   <a class="allList-link changeColor" href="http://localhost:4000/artist/{{.Id}}" >
+                   <a class="allList-link changeColor" href="/artist/{{.Id}}" >
                       {{.Name}}
                    </a>
                    {{end}}
@@ -32,7 +32,7 @@
             <div class="container flex gap-flex">
                 {{range.}}
                 <div class="content">
-                    <a class="band-logo" href="http://localhost:4000/artist/{{.Id}}">
+                    <a class="band-logo" href="/artist/{{.Id}}">
                         <img src="{{.Image}}" alt="Here is a picture of {{.Name}} " title="{{.Name}}">
                         <div class="content-animation">
                             <p class="content-text">
